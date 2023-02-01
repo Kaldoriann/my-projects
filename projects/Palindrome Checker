@@ -1,1 +1,17 @@
+function palindrome(str) {
+  let reg = /[^a-zA-Z0-9]/g;
+  let noSymbolsLCase = str.toLowerCase().replace(reg, "");
+  console.log(noSymbolsLCase);
+  let len = noSymbolsLCase.length;
+  console.log(len);
+  for (let i = 0; i < len / 2; i++) {
+    if (noSymbolsLCase[i] !== noSymbolsLCase[len - 1 - i]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(palindrome("0_0 (: /- :) 0-0"));
 
