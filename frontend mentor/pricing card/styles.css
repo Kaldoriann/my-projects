@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+#card {
+  height: 600px;
+  width: 350px;
+  border: 3px solid red;
+}
+#top-section {
+  height: 40%;
+  width: 100%;
+  border: 2px solid green;
+}
+
+#bottom-section {
+  height: 60%;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+#bottom-left-section {
+  height: 100%;
+  width: 50%;
+  border: 2px solid orange;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #2ab2af;
+}
+#bottom-right-section {
+  height: 100%;
+  width: 50%;
+  border: 2px solid black;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #2ebfbd;
+}
